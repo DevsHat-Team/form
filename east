@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eastern Fulfillment Co</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #f8f9fb;
+      color: #111827;
+      position: relative;
+      overflow-x: hidden;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: white;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+      position: relative;
+      z-index: 2;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      width: 32px;
+      margin-right: 0.5rem;
+    }
+    .cta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .cta a {
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      background: #4f46e5;
+      color: white;
+      border-radius: 0.5rem;
+      font-weight: 600;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+      position: relative;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    .hero h1 span {
+      color: #6366f1;
+    }
+    .hero p {
+      max-width: 600px;
+      margin: 1rem auto;
+      color: #6b7280;
+    }
+    .rocket-icon {
+      margin: 0 auto 1.5rem;
+      background: #eef2ff;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .form-container {
+      background: white;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      position: relative;
+      z-index: 1;
+    }
+    .form-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .form-field {
+      flex: 1 1 45%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .form-field label {
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    .form-field i {
+      position: absolute;
+      top: 2.5rem;
+      left: 0.75rem;
+      color: #9ca3af;
+    }
+    .form-field input,
+    .form-field select,
+    .form-field textarea {
+      padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+      border: 1px solid #d1d5db;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    .form-actions {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+    }
+    .form-actions button,
+    .form-actions a {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn-primary {
+      background: linear-gradient(to right, #4f46e5, #6366f1);
+      color: white;
+    }
+    .btn-secondary {
+      background: white;
+      border: 1px solid #d1d5db;
+      color: #111827;
+    }
+    .help-btn {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      background: #6366f1;
+      color: white;
+      border: none;
+      border-radius: 9999px;
+      padding: 0.75rem 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .background-bubbles::before,
+    .background-bubbles::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      background: #eef2ff;
+      opacity: 0.6;
+      z-index: 0;
+    }
+    .background-bubbles::before {
+      width: 300px;
+      height: 300px;
+      top: -100px;
+      left: -100px;
+    }
+    .background-bubbles::after {
+      width: 250px;
+      height: 250px;
+      bottom: -80px;
+      right: -80px;
+    }
+    @media (max-width: 640px) {
+      .form-field {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body class="background-bubbles">
+  <header>
+    <div class="logo">
+      <img src="https://img.icons8.com/color/48/000000/open-box--v1.png" alt="Logo" />
+      <div>
+        <strong>Eastern Fulfillment Co</strong><br />
+        <small>Enterprise 3PL Solutions</small>
+      </div>
+    </div>
+    <div class="cta">
+      <small>24/7 Support</small>
+      <a href="#">Get Started</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="rocket-icon">
+      <img src="https://img.icons8.com/ios-filled/30/4f46e5/rocket.png" alt="Rocket Icon" />
+    </div>
+    <h1>Transform Your <span>Logistics</span></h1>
+    <p>Join thousands of businesses scaling with our enterprise-grade fulfillment platform. Start your transformation today.</p>
+  </section>
+
+  <section class="form-container">
+    <h2>Let's Get Started</h2>
+    <p>Tell us about your business and we’ll create a custom solution</p>
+    <form>
+      <div class="form-group">
+        <div class="form-field">
+          <label>Company Name *</label>
+          <i class="fas fa-building"></i>
+          <input type="text" placeholder="Enter your company name" required />
+        </div>
+        <div class="form-field">
+          <label>Contact Person *</label>
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Your full name" required />
+        </div>
+        <div class="form-field">
+          <label>Business Email *</label>
+          <i class="fas fa-envelope"></i>
+          <input type="email" placeholder="you@company.com" required />
+        </div>
+        <div class="form-field">
+          <label>Phone Number *</label>
+          <i class="fas fa-phone"></i>
+          <input type="tel" placeholder="+1 (555) 000-0000" required />
+        </div>
+        <div class="form-field">
+          <label>Industry Type *</label>
+          <i class="fas fa-industry"></i>
+          <select required>
+            <option value="">Select your industry</option>
+            <option>Retail</option>
+            <option>Healthcare</option>
+            <option>Electronics</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label>Monthly Order Volume *</label>
+          <i class="fas fa-box"></i>
+          <select required>
+            <option value="">Select volume range</option>
+            <option>0 - 500</option>
+            <option>500 - 5,000</option>
+            <option>5,000+</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label>Preferred Location *</label>
+          <i class="fas fa-map-marker-alt"></i>
+          <select required>
+            <option value="">Select location</option>
+            <option>East Coast</option>
+            <option>West Coast</option>
+            <option>Midwest</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label>Implementation Timeline *</label>
+          <i class="fas fa-clock"></i>
+          <select required>
+            <option value="">Select timeline</option>
+            <option>1-2 weeks</option>
+            <option>1 month</option>
+            <option>3+ months</option>
+          </select>
+        </div>
+        <div class="form-field" style="flex: 1 1 100%;">
+          <label>Additional Requirements</label>
+          <i class="fas fa-tasks"></i>
+          <textarea placeholder="Tell us about special handling, integration needs, or any specific requirements..."></textarea>
+        </div>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">Start My Transformation</button>
+        <a href="#" class="btn-secondary">Schedule Demo</a>
+      </div>
+    </form>
+  </section>
+
+  <button class="help-btn">Help</button>
+</body>
+</html>
